@@ -1,2 +1,2 @@
 # WorkShowcase
- TRabajp de diseño adaptable
+ Trabajo de diseño adaptable
