@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(12, 231, 103, 0.719);
+  }
+ 
+  .boton{
+    background: rgb(255, 255, 255);
+    color: aqua;
+    text-decoration: none;
+    padding: 10px;
+  }
+  .seleccionado{
+    background: aqua;
+    color: rgb(255, 255, 255);
+  }
+  a{
+    margin-right: 10px;
+  }
