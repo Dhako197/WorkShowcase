@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    float: center;
+  }
+button{
+    float: left;
+    margin-left: 20px;
+  }
+.header {
+    background-color: #D9D9D9;
+    height: 50px;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.main {
+    margin-top: 70px;
+    text-align: center;
+}
+.large-image {
+    
+    background: url('img/kiriko.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.small-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.small-image {
+    background-color: #ddd;
+    background-image: url('ruta_de_la_imagen_pequeña.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+.small-image:hover {
+    transform: scale(1.1);
+}
+img {
+    max-width: 70%;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+ 

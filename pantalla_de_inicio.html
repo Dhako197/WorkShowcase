@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-        <head>
-          <title>Pantalla de inicio</title>
-        </head>
-        <body>
-          <div>
-            <button type="button" onclick="configuracion()">
-              <img src="configuracion.jpg" alt="imagen de configuracion">
-            </button>
-            <img src="foto.jpg" alt="Imagen central">
-          </div>
-          <div>
-            <button type="button" onclick="window.location.href='portafolio.html'">portafolio</button>
-            <button type="button" onclick="window.location.href='campos_de_trabajo.html'">empleos</button>
-            <button type="button" onclick="window.location.href='lista_de_empleados.html'">contratar</button>
-          </div>
-        </body>
-      </html>
-      
+<html>
+<head>
+  <title>Pantalla de inicio</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <button class="options">Opciones</button>
+    <img src="https://via.placeholder.com/500x300" alt="Imagen central">
+
+    <div class="button-container">
+      <button class="portfolio" onclick="window.location.href='portafolio.html'">Portafolio</button>
+      <button class="jobs">Empleos</button>
+      <button class="hire">Contratar</button>
+    </div>
+  </div>
+</body>
 </html>
