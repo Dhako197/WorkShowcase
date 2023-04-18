@@ -1,6 +1,19 @@
 
 body {
+  margin: 0;
+  padding: 0;
 	background-color: #a880c23b;
+}
+.header {
+  background-color: #a880c23b;
+  height: 50px;
+  color: #a880c23b;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 form {
   max-width: 500px;
@@ -10,14 +23,26 @@ form {
   justify-content: center;
   align-items: center;
 }
-
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  float: center;
+}
 h2 {
   text-align: center;
 }
-
+nav {
+  margin-top: 20px;
+}
 label {
   display: block;
   margin-bottom: 5px;
+  width: 100px;
+  margin-right: 10px;
+  line-height: 32px;
 }
 
 input {
@@ -48,11 +73,85 @@ button:hover {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  }
+  
+  .back-button {
+    background-color: #f2f2f2;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    float: center;
+
+  }
+  
+  .gallery a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  img {
+    max-width: 45%;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+  
+  img.maximized {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    object-fit: contain;
+    background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  img.maximized:hover {
+    opacity: 0.8;
+  }
+  .header {
+    background-color: #D9D9D9;
+    height: 50px;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
+  
 
 img {
-  max-width: 100%;
   height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .button-container {
@@ -74,3 +173,60 @@ img {
   top: 10px;
   left: 10px;
 }
+.large-image {
+    
+  background: url('img/kiriko.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+.small-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.small-image {
+  background-color: #ddd;
+  background-image: url('ruta_de_la_imagen_pequeña.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.small-image:hover {
+  transform: scale(1.1);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+
+
+.gallery_work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
