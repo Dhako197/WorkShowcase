@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de contraseña</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<header class="header">
+    <button onclick="history.back()">Regresar</button>
+ </header>
+<body>
+  <div class="container">
+    <h1>Cambiar contrasena</h1>
+    <form action="procesar.php" method="POST">
+      <label for="password">Contrasena:</label>
+      <input type="password" name="password" id="password">
+      <label for="confirm-password">Confirmar contrasena:</label>
+      <input type="password" name="confirm-password" id="confirm-password">
+      <button type="button" id="submit-btn">Continuar</button>
+    </form>
+    <div id="error-message" style="display:none;">Las contrasenas no coinciden.</div>
+  </div>
+  <script>
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+    const submitButton = document.getElementById('submit-btn');
+    const errorMessage = document.getElementById('error-message');
+
+    function validatePassword() {
+      if (passwordInput.value !== confirmPasswordInput.value) {
+        errorMessage.style.display = 'block';
+        submitButton.disabled = true;
+      } else {
+        errorMessage.style.display = 'none';
+        submitButton.disabled = false;
+      }
+    }
+
+    submitButton.addEventListener('click', function() {
+      validatePassword();
+      if (submitButton.disabled === false) {
+        window.location.href = 'exito2.html';
+      }
+    });
+  </script>
+</body>
+</html>

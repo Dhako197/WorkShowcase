@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  margin-top: 70px;
   padding: 0;
 	background-color: #a880c23b;
 }
@@ -66,7 +67,7 @@ button {
 }
 
 button:hover {
-  background-color: #3e8e41;
+  background-color: #e210e2;
 }
 
 .container {
@@ -228,5 +229,10 @@ li:last-child {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+}
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
