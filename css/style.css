@@ -48,6 +48,14 @@ body {
     letter-spacing: 1px;
     color: var(--title-bg);
 }
+.nameTitle{
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: var(--title-bg);
+    margin-bottom: 0.5rem;
+}
 
 .social-login {
     width: 100%;

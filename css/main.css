@@ -56,6 +56,7 @@ input {
 }
 
 button {
+  width: 80%;
   background-color: #A880C2;
   color: white;
   padding: 10px 20px;
@@ -64,6 +65,17 @@ button {
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
+}
+.options{
+  width: 10%;
+  
+}
+.ajustesContainer{
+  position: relative;
+}
+.ajustesBotones{
+  position: absolute;
+ 
 }
 
 button:hover {
